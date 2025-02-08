@@ -107,7 +107,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [@AvanisHCodes_](https://twitter.com/AvanisHCodes_)
+## Your Name - [@AvanisHCodes_](https://twitter.com/AvanisHCodes_)
 
 
 ## Click here to check out the **backend Link**: [https://github.com/AvanishVadke/newsletter-backend](https://github.com/AvanishVadke/Backend-for-SQL-nodemailer-newsletter-app/)
