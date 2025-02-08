@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Newsletter Subscription App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React application for managing newsletter subscriptions with real-time status checking and beautiful UI animations.
 
-## Available Scripts
+![App Screenshot](./screenshots/app.png)
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 📧 Email subscription management
+- ⚡ Real-time subscription status checking
+- 🎨 Modern UI with neon animations
+- ✉️ Email validation
+- 📱 Fully responsive design
+- 🔔 Success/Error notifications
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React 18
+- Axios for API calls
+- Lucide React for icons
+- CSS3 with custom animations
+- Environment variables support
 
-### `npm test`
+## 📦 Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/newsletter-frontend.git
+cd newsletter-frontend
+```
 
-### `npm run build`
+2. Install dependencies:
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Create a `.env` file in the root directory:
+```env
+REACT_APP_API_URL=http://localhost:9000
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the development server:
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🗂️ Project Structure
 
-### `npm run eject`
+```
+newsletter-frontend/
+├── public/
+├── src/
+│   ├── components/
+│   │   └── Home.jsx
+│   ├── styles/
+│   │   └── Home.css
+│   ├── App.js
+│   └── index.js
+├── .env
+├── .gitignore
+└── package.json
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ Available Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm start` - Run development server
+- `npm test` - Run test suite
+- `npm run build` - Build for production
+- `npm run eject` - Eject from Create React App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔑 Environment Variables
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `REACT_APP_API_URL` | Backend API URL | `http://localhost:9000` |
 
-## Learn More
+## 🔌 API Integration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app connects to these endpoints:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```javascript
+${REACT_APP_API_URL}/check-status  // Check subscription status
+${REACT_APP_API_URL}/subscribe     // Subscribe email
+${REACT_APP_API_URL}/unsubscribe   // Unsubscribe email
+```
 
-### Code Splitting
+## 🎯 Component Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Home Component
+- Email input with validation
+- Real-time subscription status checking
+- Subscribe/Unsubscribe functionality
+- Animated status messages
+- Neon background effects
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-### Making a Progressive Web App
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Advanced Configuration
+## 📧 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://github.com/yourusername/newsletter-frontend](https://github.com/yourusername/newsletter-frontend)
