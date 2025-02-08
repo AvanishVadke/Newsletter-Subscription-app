@@ -15,7 +15,7 @@ A modern React application for managing newsletter subscriptions with real-time 
 
 ## 🛠️ Tech Stack
 
-- React 18
+- React 19
 - Axios for API calls
 - Lucide React for icons
 - CSS3 with custom animations
