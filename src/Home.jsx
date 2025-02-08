@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Mail, X } from 'lucide-react';
 import axios from "axios";
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 const Home = () => {
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
@@ -9,8 +11,7 @@ const Home = () => {
   const [bgClass, setBgClass] = useState("default-bg");
 
   const checkSubscriptionStatus = (emailToCheck) => {
-    // Updated to use Render's backend URL
-    axios.post('https://backend-for-sql-nodemailer-newsletter-app.onrender.com/check-status', { email: emailToCheck })
+    axios.post(`${API_URL}/check-status`, { email: emailToCheck })
       .then(response => {
         setIsSubscribed(response.data.isSubscribed);
       })
@@ -33,8 +34,7 @@ const Home = () => {
     e.preventDefault();
     
     if (!isSubscribed) {
-      // Updated to use Render's backend URL
-      axios.post('https://backend-for-sql-nodemailer-newsletter-app.onrender.com/subscribe', { email })
+      axios.post(`${API_URL}/subscribe`, { email })
         .then(response => {
           setIsSubscribed(true);
           setStatus(response.data.message);
@@ -45,8 +45,7 @@ const Home = () => {
           setBgClass("default-bg");
         });
     } else {
-      // Updated to use Render's backend URL
-      axios.delete('https://backend-for-sql-nodemailer-newsletter-app.onrender.com/unsubscribe', {
+      axios.delete(`${API_URL}/unsubscribe`, {
         data: { email }
       })
         .then(response => {
